@@ -7,7 +7,9 @@ public class Combatant(
     int energy,
     int power,
     int defence,
-    int criticalChance) : GameObject(name, description)
+    int criticalChance,
+    int x,
+    int y) : GameObject(name, description)
 {
     public int Health = health;
     public int Energy = energy;
@@ -15,6 +17,8 @@ public class Combatant(
     public int Experience = 0;
     public int Power = power;
     public int Defence = defence;
+    public int X = x;
+    public int Y = y;
 
     public double CriticalChance = criticalChance;
     // Add weapon and armor types.
