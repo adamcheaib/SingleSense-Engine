@@ -1,6 +1,6 @@
 namespace DiscordBattler.GameObjects;
 
-public class GameObject(string name, string description)
+public class GameObject(string name, string description) : IInteractableObject
 {
     public readonly string Name = name;
     public readonly string Description = description;

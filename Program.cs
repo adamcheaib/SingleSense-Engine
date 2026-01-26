@@ -6,9 +6,15 @@ public class DiscordBattler
 {
     public static void Main()
     {
-        string input = "east";
-        char charInput = 'e';
-        Console.WriteLine(Directions.ControlMovement(input));
-        Console.WriteLine(Directions.ControlMovement(charInput));
+        Combatant adamNeaj = new Combatant(
+            "Adam Neaj",
+            "An amazing fighter,",
+            100,
+            100,
+            1,
+            1,
+            0
+        );
+
     }
 }
