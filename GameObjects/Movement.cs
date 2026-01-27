@@ -1,3 +1,4 @@
+using DiscordBattler.GameEngine;
 namespace DiscordBattler.GameObjects;
 
 /*
@@ -12,9 +13,9 @@ public static class Movement
 {
     private enum ValidDirections
     {
-        North = 1,
+        North = -1,
         East = 1,
-        South = -1,
+        South = 1,
         West = -1
     }
 
@@ -31,12 +32,12 @@ public static class Movement
             { "w", ValidDirections.West }
         };
 
-    public static bool ControlMovement(string input)
+    private static bool ControlMovement(string input)
     {
-        return _validDirections.ContainsKey(input);
+        return _validDirections.ContainsKey(input.ToLower());
     }
 
-    public static bool ControlMovement(char input)
+    private static bool ControlMovement(char input)
     {
         return _validDirections.ContainsKey(input.ToString());
     }
@@ -46,5 +47,38 @@ public static class Movement
         // Converts the enum value to its int counterpart.
         return (int)_validDirections[input];
     }
-    
+
+    public static bool MoveUnit(Player player, string direction)
+    {
+        // Validates the input for the direction.
+        if (!ControlMovement(direction))
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine($"Unknown direction: {direction}");
+            Console.ResetColor();
+            return false;
+        }
+
+        // Checks if the tile is available.
+        if (Map.CheckVacancyOfTile(player, direction))
+        {
+            switch (direction[0])
+            {
+                case 'n':
+                case 's':
+                    player.Y += Movement.AddCoordinates(direction);
+                    return true;
+                case 'e':
+                case 'w':
+                    player.X += Movement.AddCoordinates(direction);
+                    return true;
+                default: Console.WriteLine("Weird bug here!"); break;
+            }
+        }
+
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine("I cannot go there.");
+        Console.ResetColor();
+        return false;
+    }
 }

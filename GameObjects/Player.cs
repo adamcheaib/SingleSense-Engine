@@ -14,28 +14,11 @@ public class Player(
 {
     public void Move(string direction)
     {
-        if (!Movement.ControlMovement(direction))
+        if (!Movement.MoveUnit(this, direction))
         {
-            Console.WriteLine($"I do not know where {direction} is");
             return;
         }
 
-        switch (direction)
-        {
-            case "n":
-            case "north":
-            case "s":
-            case "south":
-                Console.WriteLine($"Y: {this.Y} currently.");
-                this.Y += Movement.AddCoordinates(direction);
-                Console.WriteLine($"Y is now {this.Y}");
-                break;
-            case "e":
-            case "east":
-            case "w":
-            case "west":
-                this.X += Movement.AddCoordinates(direction);
-                break;
-        }
+        Console.WriteLine($"I moved {direction}");
     }
 }

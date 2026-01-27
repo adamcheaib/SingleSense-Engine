@@ -8,18 +8,6 @@ public class DiscordBattler
 {
     public static void Main()
     {
-        Combatant adamNeaj = new Combatant(
-            "Adam Neaj",
-            "An amazing fighter,",
-            100,
-            100,
-            1,
-            1,
-            0,
-            1,
-            1
-        );
-
         Player playerOne = new Player(
             "Adam",
             "An amazing person.",
@@ -30,7 +18,12 @@ public class DiscordBattler
             0,
             1, 1
         );
-        
-        playerOne.Move("north");
+     
+        playerOne.Move("south");
+        playerOne.Move("south");
+        playerOne.Move("south");
+        playerOne.Move("south");
+        playerOne.Move("east");
+        playerOne.Move("west");
     }
 }
