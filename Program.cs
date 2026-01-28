@@ -17,13 +17,20 @@ public class DiscordBattler
             0,
             1, 1
         );
-     
-        Map.PrintMap(playerOne);
-        playerOne.Move("south");
-        Map.PrintMap(playerOne);
-        playerOne.Move("south");
-        Map.PrintMap(playerOne);
-        playerOne.Move("east");
-        Map.PrintMap(playerOne);
+
+        Combatant demon = new Combatant(
+            "Demon",
+            "A scary demon",
+            100,
+            100,
+            1,
+            1,
+            0,
+            1,
+            2
+        );
+
+        BattleSystem testBattle = new BattleSystem();
+        testBattle.SetFighters(playerOne, demon);
     }
 }

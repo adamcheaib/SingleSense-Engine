@@ -21,4 +21,10 @@ public class Player(
 
         Console.WriteLine($"I moved {direction}");
     }
+
+    // Prints out the different actions that a player can make. This will be used in the battle-system.
+    public void PrintActions()
+    {
+        
+    }
 }
