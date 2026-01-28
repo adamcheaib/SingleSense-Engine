@@ -1,6 +1,5 @@
-﻿using DiscordBattler.GameObjects;
-using System.Collections.Generic;
-using System.Linq;
+﻿using DiscordBattler.GameEngine;
+using DiscordBattler.GameObjects;
 
 namespace DiscordBattler;
 
@@ -9,9 +8,9 @@ public class DiscordBattler
     public static void Main()
     {
         Player playerOne = new Player(
-            "Adam",
+            "Elia",
             "An amazing person.",
-            100,
+            1337,
             100,
             1,
             1,
@@ -19,11 +18,12 @@ public class DiscordBattler
             1, 1
         );
      
+        Map.PrintMap(playerOne);
         playerOne.Move("south");
+        Map.PrintMap(playerOne);
         playerOne.Move("south");
-        playerOne.Move("south");
-        playerOne.Move("south");
+        Map.PrintMap(playerOne);
         playerOne.Move("east");
-        playerOne.Move("west");
+        Map.PrintMap(playerOne);
     }
 }

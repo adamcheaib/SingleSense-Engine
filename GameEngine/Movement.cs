@@ -60,7 +60,7 @@ public static class Movement
         }
 
         // Checks if the tile is available.
-        if (Map.CheckVacancyOfTile(player, direction))
+        if (Map.CheckMovePossibility(player, direction))
         {
             switch (direction[0])
             {

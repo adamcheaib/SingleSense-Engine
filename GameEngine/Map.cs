@@ -11,7 +11,7 @@ public static class Map
     The question remains: how do I place the different things on the map?
      */
 
-    public static int?[,] TileMap =
+    private static int?[,] TileMap =
     {
         { null, null, null, null, null, null, null, null },
         { null, 1, 1, 1, 1, 1, null, null },
@@ -22,9 +22,9 @@ public static class Map
         { null, null, null, null, null, null, null, null }
     };
 
-    public static bool CheckVacancyOfTile(Player player, string direction)
+    public static bool CheckMovePossibility(Player player, string direction)
     {
-        char directionToMove = direction[0];
+        char directionToMove = char.ToLower(direction[0]);
 
         switch (directionToMove)
         {
@@ -41,5 +41,32 @@ public static class Map
         }
 
         return false;
+    }
+
+    public static void PrintMap(Player player)
+    {
+        Console.WriteLine(TileMap.GetLength(1));
+
+        Console.WriteLine("\t\t\t===== MAP =====");
+        Console.WriteLine("\t\tThe tile I am on is marked with green.\n\t\tThe O's are places I can walk.");
+        for (int row = 0; row < TileMap.GetLength(0); row++)
+        {
+            for (int column = 0; column < TileMap.GetLength(1); column++)
+            {
+                int? entry = TileMap[row, column];
+                if (player.X == column && player.Y == row)
+                {
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.Write("\tX");
+                    Console.ResetColor();
+                    continue;
+                }
+
+                if (entry == null) Console.Write("\t-");
+                else Console.Write($"\tO");
+            }
+
+            Console.WriteLine();
+        }
     }
 }
