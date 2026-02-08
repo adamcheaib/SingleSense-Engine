@@ -1,0 +1,5 @@
+/home/adam/Documents/GitHub/DiscordBattler/bin/Release/net10.0/win-x64/publish/DiscordBattler.exe
+/home/adam/Documents/GitHub/DiscordBattler/bin/Release/net10.0/win-x64/publish/DiscordBattler.dll
+/home/adam/Documents/GitHub/DiscordBattler/bin/Release/net10.0/win-x64/publish/DiscordBattler.deps.json
+/home/adam/Documents/GitHub/DiscordBattler/bin/Release/net10.0/win-x64/publish/DiscordBattler.runtimeconfig.json
+/home/adam/Documents/GitHub/DiscordBattler/bin/Release/net10.0/win-x64/publish/DiscordBattler.pdb

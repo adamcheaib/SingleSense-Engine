@@ -8,6 +8,7 @@ public class Combatant(
     int power,
     int defence,
     int criticalChance,
+    // Add a List or a Dictionary of abilities here
     int x,
     int y) : GameObject(name, description)
 {

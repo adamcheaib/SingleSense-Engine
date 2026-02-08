@@ -1,0 +1,15 @@
+/home/adam/Documents/GitHub/DiscordBattler/bin/Release/net10.0/win-x64/DiscordBattler.exe
+/home/adam/Documents/GitHub/DiscordBattler/bin/Release/net10.0/win-x64/DiscordBattler.deps.json
+/home/adam/Documents/GitHub/DiscordBattler/bin/Release/net10.0/win-x64/DiscordBattler.runtimeconfig.json
+/home/adam/Documents/GitHub/DiscordBattler/bin/Release/net10.0/win-x64/DiscordBattler.dll
+/home/adam/Documents/GitHub/DiscordBattler/bin/Release/net10.0/win-x64/DiscordBattler.pdb
+/home/adam/Documents/GitHub/DiscordBattler/obj/Release/net10.0/win-x64/DiscordBattler.GeneratedMSBuildEditorConfig.editorconfig
+/home/adam/Documents/GitHub/DiscordBattler/obj/Release/net10.0/win-x64/DiscordBattler.AssemblyInfoInputs.cache
+/home/adam/Documents/GitHub/DiscordBattler/obj/Release/net10.0/win-x64/DiscordBattler.AssemblyInfo.cs
+/home/adam/Documents/GitHub/DiscordBattler/obj/Release/net10.0/win-x64/DiscordBattler.csproj.CoreCompileInputs.cache
+/home/adam/Documents/GitHub/DiscordBattler/obj/Release/net10.0/win-x64/DiscordBattler.sourcelink.json
+/home/adam/Documents/GitHub/DiscordBattler/obj/Release/net10.0/win-x64/DiscordBattler.dll
+/home/adam/Documents/GitHub/DiscordBattler/obj/Release/net10.0/win-x64/refint/DiscordBattler.dll
+/home/adam/Documents/GitHub/DiscordBattler/obj/Release/net10.0/win-x64/DiscordBattler.pdb
+/home/adam/Documents/GitHub/DiscordBattler/obj/Release/net10.0/win-x64/DiscordBattler.genruntimeconfig.cache
+/home/adam/Documents/GitHub/DiscordBattler/obj/Release/net10.0/win-x64/ref/DiscordBattler.dll

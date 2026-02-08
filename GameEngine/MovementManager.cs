@@ -9,7 +9,7 @@ For example, if a user inputs "w" or "west", the static class will control wheth
 movement or not, and whether the input is valid or not.
  */
 
-public static class Movement
+public static class MovementManager
 {
     private enum ValidDirections
     {
@@ -32,26 +32,27 @@ public static class Movement
             { "w", ValidDirections.West }
         };
 
-    private static bool ControlMovement(string input)
+    private static bool ControlMovementInput(string input)
     {
         return _validDirections.ContainsKey(input.ToLower());
     }
 
-    private static bool ControlMovement(char input)
+    private static bool ControlMovementInput(char input)
     {
         return _validDirections.ContainsKey(input.ToString());
     }
-
-    public static int AddCoordinates(string input)
+ 
+    // Gets the int to add/subtract to the Player's position. Based on the _validDirections dictionary.
+    private static int GetCoordinateValues(string input)
     {
-        // Converts the enum value to its int counterpart.
+        // Converts the enum value to its integer counterpart.
         return (int)_validDirections[input];
     }
 
     public static bool MoveUnit(Player player, string direction)
     {
         // Validates the input for the direction.
-        if (!ControlMovement(direction))
+        if (!ControlMovementInput(direction))
         {
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine($"Unknown direction: {direction}");
@@ -60,17 +61,17 @@ public static class Movement
         }
 
         // Checks if the tile is available.
-        if (Map.CheckMovePossibility(player, direction))
+        if (MapManager.CheckMovePossibility(player, direction))
         {
             switch (direction[0])
             {
                 case 'n':
                 case 's':
-                    player.Y += Movement.AddCoordinates(direction);
+                    player.Y += MovementManager.GetCoordinateValues(direction);
                     return true;
                 case 'e':
                 case 'w':
-                    player.X += Movement.AddCoordinates(direction);
+                    player.X += MovementManager.GetCoordinateValues(direction);
                     return true;
                 default: Console.WriteLine("Weird bug here!"); break;
             }

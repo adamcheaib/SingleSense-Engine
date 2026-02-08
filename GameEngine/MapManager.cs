@@ -2,7 +2,7 @@ using DiscordBattler.GameObjects;
 
 namespace DiscordBattler.GameEngine;
 
-public static class Map
+public static class MapManager
 {
     /*
     Everything needs to be placed on the map using coordinates. It is coordinates that they receive in each instance.
@@ -22,8 +22,13 @@ public static class Map
         { null, null, null, null, null, null, null, null }
     };
 
+    /*
+     This function checks whether the single-tiled move is possible by checking if it is null or a Scene (temporarily 1 at the moment).
+     A Combatant can only move one tile at a time, either X or Y tile. Returns Boolean depending on the tile.
+    */
     public static bool CheckMovePossibility(Player player, string direction)
     {
+        // Extracts the first character of the command. Whether it is a full word or just the initial letter.
         char directionToMove = char.ToLower(direction[0]);
 
         switch (directionToMove)
@@ -43,6 +48,7 @@ public static class Map
         return false;
     }
 
+    // Prints the current map to the standard output.
     public static void PrintMap(Player player)
     {
         Console.WriteLine(TileMap.GetLength(1));
