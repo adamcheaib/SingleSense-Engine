@@ -28,10 +28,15 @@ public class Player(
     {
         if (!MovementManager.MoveUnit(this, direction))
         {
+            
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine($"{this.Name}: I cannot go there.");
+            Console.ResetColor();
             return;
         }
 
-        Console.WriteLine($"I moved {direction}");
+        // TODO: Currently, if I move using the first letter of the direction, the output is "I moved [first letter]". This needs to be automated so that the direction name is printed out rather than what I input.
+        Console.WriteLine($"{this.Name}: I moved {direction}");
         // Scans the current scene and what is going on.
     }
 

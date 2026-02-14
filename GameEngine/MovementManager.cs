@@ -73,13 +73,10 @@ public static class MovementManager
                 case 'w':
                     player.X += MovementManager.GetCoordinateValues(direction);
                     return true;
-                default: Console.WriteLine("Weird bug here!"); break;
+                default: Console.WriteLine("Movement Manager (error): Weird bug here!"); break;
             }
         }
 
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine("I cannot go there.");
-        Console.ResetColor();
         return false;
     }
 }

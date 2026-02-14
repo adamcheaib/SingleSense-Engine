@@ -8,6 +8,8 @@ public class DiscordBattler
 {
     public static void Main()
     {
+        CommandsManager gameCommandsManager = new CommandsManager();
+        
         Player playerOne = new Player(
             "Mikael",
             "An amazing person.",
@@ -33,11 +35,15 @@ public class DiscordBattler
         CombatManager fightSystem = new CombatManager();
         fightSystem.SetFighters(playerOne, monster);
 
-        // Dictionary<string, Func<(string, int), int>> test = new Dictionary<string, Func<(string, int), int>>();
-
-        Commands cmds = new Commands(new Dictionary<string, Action>());
-        cmds.ValidateCommand("aoskdosakd");
-        Console.WriteLine("Hej");
+        void testFunc(object? args)
+        {
+            Console.WriteLine("hej");
+        }
+        
+        gameCommandsManager.AddCommand("hej", testFunc);
+        gameCommandsManager.DeleteCommand("hej");
+        gameCommandsManager.DeleteCommand("rastaman");
+        playerOne.Move("e");
         
         // while (true)
         // {

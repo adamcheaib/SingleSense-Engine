@@ -1,4 +1,6 @@
-I am currently at the BattleSystem where I am creating the turn-based system. 
+**I finished the Commands class that adds and executes user commands. This needs only one instance and nothing more. I could have made it as a static class but for now I am retaining it as a regular class. If any problems arise or new features need to be added, I will fix them immediately.**
+
+I am currently at the CombatManager where I am creating the turn-based system. 
 
 So far I have created the methods that:
     - Determines who gets to start first.
@@ -11,8 +13,6 @@ Additionally, I need to create an AI class that determines a mob's action based 
         - The AI class analyzes the current stats of the fight and determines its next move.
           An approach to this is to use FSM (Finite State-machine) which means that based on different conditions,
           the AI will react differently. I need to create the scenarios myself: https://gunesramazan.medium.com/implementing-state-machines-in-c-using-stateless-a-step-by-step-guide-641e35133134
-
-
 
 
 
