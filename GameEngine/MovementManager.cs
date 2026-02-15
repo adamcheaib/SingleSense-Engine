@@ -1,3 +1,4 @@
+using DiscordBattler.Fighters;
 using DiscordBattler.GameEngine;
 namespace DiscordBattler.GameObjects;
 
@@ -33,7 +34,7 @@ public static class MovementManager
         };
 
     private static bool ControlMovementInput(string input)
-    {
+    { 
         return _validDirections.ContainsKey(input.ToLower());
     }
 

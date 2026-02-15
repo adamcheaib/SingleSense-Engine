@@ -1,4 +1,6 @@
-namespace DiscordBattler.GameObjects;
+using DiscordBattler.GameObjects;
+
+namespace DiscordBattler.Fighters;
 
 public class Player(
     string name,
@@ -13,7 +15,7 @@ public class Player(
 ) : Combatant(name, description, health, energy, power, defence, criticalChance, x, y)
 {
 
-    private enum Actions
+    private enum PlayerActions
     {
         Attack = 0,
         Defend,
@@ -28,7 +30,6 @@ public class Player(
     {
         if (!MovementManager.MoveUnit(this, direction))
         {
-            
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine($"{this.Name}: I cannot go there.");
             Console.ResetColor();

@@ -1,3 +1,4 @@
+using DiscordBattler.Fighters;
 using DiscordBattler.GameObjects;
 
 namespace DiscordBattler.GameEngine;

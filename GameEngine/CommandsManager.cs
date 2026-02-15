@@ -1,13 +1,23 @@
-using System.Net.Mime;
-
 namespace DiscordBattler.GameEngine;
 
-public class CommandsManager()
-{
-    private readonly Dictionary<string, Action<object?>> _validCommands = new();
+/*
+    Example of how to add and execute  a command in the main file:
 
-    // TODO: arg 'action' cannot be null! Needs to be refactored later on once development is over.
-    public void AddCommand(string command, Action<object?> action)
+        1. Commands gameCommands = new Commands(); // !!! Make only one instance. This is basically the user controls!!!
+        2. void testFunc(string[]? args) { Console.WriteLine("hejhopp") };
+        3. gameCommands.AddCommand("start", testFunc);
+        4. gameCommands.ExecuteCommand("start");
+
+        If a command already exists the program will exit. This is to avoid any logical runtime errors.
+ */
+
+public class CommandsManager
+{
+    private readonly Dictionary<string, Action<string[]?>> _validCommands = new();
+    private readonly Dictionary<string, string> _commandDescriptions = new();
+
+    // TODO: MAYBE --> arg 'action' cannot be null! Needs to be refactored later on once development is over.
+    public void AddCommand(string command, Action<string[]?> action, string description)
     {
         if (_validCommands.ContainsKey(command))
         {
@@ -16,10 +26,27 @@ public class CommandsManager()
             return;
         }
 
+        _commandDescriptions[command] = description;
         _validCommands[command] = action;
         Console.WriteLine($"Commands Manager: Command '{command}' has been loaded!");
     }
 
+    public void PrintCommandInstructions(string command)
+    {
+        Console.WriteLine("\n\n");
+        Console.WriteLine(_commandDescriptions[command]);
+        Console.WriteLine("\n\n");
+    }
+
+    public void PrintAvailableCommands()
+    {
+        Console.WriteLine("Here are the available commands to use: ");
+        foreach (var key in _validCommands.Keys)
+        {
+            Console.WriteLine($"\n- {key}");
+        }
+        Console.WriteLine("\nTo view instructions for a specific command, write: help [COMMAND].\nExample: help move");
+    }
 
     public void ExecuteCommand(string userCmd)
     {
@@ -63,14 +90,3 @@ public class CommandsManager()
         Console.WriteLine($"Commands Manager (error): '{command}' is not a valid command to delete!");
     }
 }
-
-/*
-    Example of how to add and execute  a command in the main file:
-
-        1. Commands gameCommands = new Commands(); // !!! Make only one instance. This is basically the user controls!!!
-        2. void testFunc(object? args) { Console.WriteLine("hejhopp") };
-        3. gameCommands.AddCommand("start", testFunc);
-        4. gameCommands.ExecuteCommand("start");
-
-        If a command already exists the program will exit. This is to avoid any logical runtime errors.
- */

@@ -1,3 +1,4 @@
+using DiscordBattler.Fighters;
 using DiscordBattler.GameObjects;
 
 namespace DiscordBattler.GameEngine;
@@ -51,8 +52,6 @@ public static class MapManager
     // Prints the current map to the standard output.
     public static void PrintMap(Player player)
     {
-        Console.WriteLine(TileMap.GetLength(1));
-
         Console.WriteLine("\t\t\t===== MAP =====");
         Console.WriteLine("\t\tThe tile I am on is marked with green.\n\t\tThe O's are places I can walk.");
         for (int row = 0; row < TileMap.GetLength(0); row++)
