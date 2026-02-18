@@ -1,6 +1,6 @@
 using System.Collections.Concurrent;
 
-namespace DiscordBattler.GameObjects;
+namespace SingleSenseEngine.GameObjects;
 
 public class UsableItem(
     string name,

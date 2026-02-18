@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "/home/adam/Documents/GitHub/SingleSense-Engine/DiscordBattler.csproj": {}
+    "/home/adam/Documents/GitHub/SingleSense-Engine/SingleSense-Engine.csproj": {}
   },
   "projects": {
-    "/home/adam/Documents/GitHub/SingleSense-Engine/DiscordBattler.csproj": {
+    "/home/adam/Documents/GitHub/SingleSense-Engine/SingleSense-Engine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/adam/Documents/GitHub/SingleSense-Engine/DiscordBattler.csproj",
-        "projectName": "DiscordBattler",
-        "projectPath": "/home/adam/Documents/GitHub/SingleSense-Engine/DiscordBattler.csproj",
+        "projectUniqueName": "/home/adam/Documents/GitHub/SingleSense-Engine/SingleSense-Engine.csproj",
+        "projectName": "SingleSense-Engine",
+        "projectPath": "/home/adam/Documents/GitHub/SingleSense-Engine/SingleSense-Engine.csproj",
         "packagesPath": "/home/adam/.nuget/packages/",
         "outputPath": "/home/adam/Documents/GitHub/SingleSense-Engine/obj/",
         "projectStyle": "PackageReference",

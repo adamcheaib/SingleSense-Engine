@@ -1,13 +1,14 @@
-using DiscordBattler.Fighters;
-using DiscordBattler.GameObjects;
+using SingleSenseEngine.Fighters;
+using SingleSenseEngine.GameObjects;
 
-namespace DiscordBattler.GameEngine;
+namespace SingleSenseEngine.GameEngine;
 
-public class CombatManager
+public class CombatManager(int diceMax)
 {
     // The Fighters collection needs to be dynamic in order to be able handle fights greather than 1v1. For when the game has GUI.
     private Combatant[] Fighters = new Combatant[2];
     private int currentTurn;
+    private int _diceMax = diceMax;
 
     // Always assigns the player to the first slot in the array.
     public void SetFighters(Combatant player, Combatant mob)

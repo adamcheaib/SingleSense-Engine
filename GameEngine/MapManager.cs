@@ -1,7 +1,7 @@
-using DiscordBattler.Fighters;
-using DiscordBattler.GameObjects;
+using SingleSenseEngine.GameObjects;
+using SingleSenseEngine.Fighters;
 
-namespace DiscordBattler.GameEngine;
+namespace SingleSenseEngine.GameEngine;
 
 public static class MapManager
 {

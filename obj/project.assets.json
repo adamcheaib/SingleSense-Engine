@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/adam/Documents/GitHub/DiscordBattler/DiscordBattler.csproj",
-      "projectName": "DiscordBattler",
-      "projectPath": "/home/adam/Documents/GitHub/DiscordBattler/DiscordBattler.csproj",
+      "projectUniqueName": "/home/adam/Documents/GitHub/SingleSense-Engine/SingleSense-Engine.csproj",
+      "projectName": "SingleSense-Engine",
+      "projectPath": "/home/adam/Documents/GitHub/SingleSense-Engine/SingleSense-Engine.csproj",
       "packagesPath": "/home/adam/.nuget/packages/",
-      "outputPath": "/home/adam/Documents/GitHub/DiscordBattler/obj/",
+      "outputPath": "/home/adam/Documents/GitHub/SingleSense-Engine/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/adam/.nuget/NuGet/NuGet.Config"

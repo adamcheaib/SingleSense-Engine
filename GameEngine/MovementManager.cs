@@ -1,6 +1,7 @@
-using DiscordBattler.Fighters;
-using DiscordBattler.GameEngine;
-namespace DiscordBattler.GameObjects;
+using SingleSenseEngine.Fighters;
+using SingleSenseEngine.GameEngine;
+
+namespace SingleSenseEngine.GameObjects;
 
 /*
 

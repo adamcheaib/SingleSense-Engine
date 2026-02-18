@@ -1,6 +1,6 @@
-using DiscordBattler.GameObjects;
+using SingleSenseEngine.GameObjects;
 
-namespace DiscordBattler.Fighters;
+namespace SingleSenseEngine.Fighters;
 
 public class Player(
     string name,
@@ -8,11 +8,12 @@ public class Player(
     int health,
     int energy,
     int power,
-    int defence,
+    int armor,
     int criticalChance,
+    double dodge,
     int x,
     int y
-) : Combatant(name, description, health, energy, power, defence, criticalChance, x, y)
+) : Combatant(name, description, health, energy, power, armor, criticalChance, dodge, x, y)
 {
 
     private enum PlayerActions
@@ -23,8 +24,6 @@ public class Player(
         Items,
         Run
     }
-    
-    
     
     public void Move(string direction)
     {
@@ -40,9 +39,11 @@ public class Player(
         Console.WriteLine($"{this.Name}: I moved {direction}");
         // Scans the current scene and what is going on.
     }
-
+    
+    
     // Prints out the different actions that a player can make. This will be used in the battle-system.
     public void PrintActions()
     {
+        
     }
 }

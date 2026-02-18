@@ -1,4 +1,4 @@
-namespace DiscordBattler.GameEngine;
+namespace SingleSenseEngine.GameEngine;
 
 /*
     Example of how to add and execute  a command in the main file:

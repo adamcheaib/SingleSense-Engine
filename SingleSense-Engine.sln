@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscordBattler", "DiscordBattler.csproj", "{E9AB8B95-EB24-4CB7-846F-3908971DAFFA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleSense-Engine", "SingleSense-Engine.csproj", "{E9AB8B95-EB24-4CB7-846F-3908971DAFFA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

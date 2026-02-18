@@ -1,4 +1,4 @@
-namespace DiscordBattler.GameObjects;
+namespace SingleSenseEngine.GameObjects;
 
 public interface IInteractableObject
 {

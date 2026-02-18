@@ -1,0 +1,15 @@
+/home/adam/Documents/GitHub/SingleSense-Engine/bin/Debug/net10.0/SingleSense-Engine
+/home/adam/Documents/GitHub/SingleSense-Engine/bin/Debug/net10.0/SingleSense-Engine.deps.json
+/home/adam/Documents/GitHub/SingleSense-Engine/bin/Debug/net10.0/SingleSense-Engine.runtimeconfig.json
+/home/adam/Documents/GitHub/SingleSense-Engine/bin/Debug/net10.0/SingleSense-Engine.dll
+/home/adam/Documents/GitHub/SingleSense-Engine/bin/Debug/net10.0/SingleSense-Engine.pdb
+/home/adam/Documents/GitHub/SingleSense-Engine/obj/Debug/net10.0/SingleSense-Engine.GeneratedMSBuildEditorConfig.editorconfig
+/home/adam/Documents/GitHub/SingleSense-Engine/obj/Debug/net10.0/SingleSense-Engine.AssemblyInfoInputs.cache
+/home/adam/Documents/GitHub/SingleSense-Engine/obj/Debug/net10.0/SingleSense-Engine.AssemblyInfo.cs
+/home/adam/Documents/GitHub/SingleSense-Engine/obj/Debug/net10.0/SingleSense-Engine.csproj.CoreCompileInputs.cache
+/home/adam/Documents/GitHub/SingleSense-Engine/obj/Debug/net10.0/SingleSense-Engine.sourcelink.json
+/home/adam/Documents/GitHub/SingleSense-Engine/obj/Debug/net10.0/SingleSense-Engine.dll
+/home/adam/Documents/GitHub/SingleSense-Engine/obj/Debug/net10.0/refint/SingleSense-Engine.dll
+/home/adam/Documents/GitHub/SingleSense-Engine/obj/Debug/net10.0/SingleSense-Engine.pdb
+/home/adam/Documents/GitHub/SingleSense-Engine/obj/Debug/net10.0/SingleSense-Engine.genruntimeconfig.cache
+/home/adam/Documents/GitHub/SingleSense-Engine/obj/Debug/net10.0/ref/SingleSense-Engine.dll
