@@ -75,6 +75,7 @@ public class SingleSenseEngine
         
         Console.WriteLine("\n\n\n\n");
         
+        //
         playerOne.Attack(monster, 5);
         
         while (true)

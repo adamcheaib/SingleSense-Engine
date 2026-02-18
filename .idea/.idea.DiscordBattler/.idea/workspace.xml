@@ -5,39 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7935f92-7fce-429a-a612-ab141b551ebc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DiscordBattler/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DiscordBattler/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DiscordBattler/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DiscordBattler/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DiscordBattler.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SingleSense-Engine.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DiscordBattler.sln" beforeDir="false" afterPath="$PROJECT_DIR$/SingleSense-Engine.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DiscordBattler/.idea/.idea.DiscordBattler/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DiscordBattler/.idea/.idea.DiscordBattler/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fighters/Combatant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fighters/Combatant.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fighters/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Fighters/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameEngine/CombatManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameEngine/CombatManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameEngine/CommandsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameEngine/CommandsManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameEngine/MapManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameEngine/MapManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameEngine/MovementManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameEngine/MovementManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameObjects/EEquipmentTypes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameObjects/EEquipmentTypes.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameObjects/Equipment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameObjects/Equipment.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameObjects/GameObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameObjects/GameObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameObjects/IInteractableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameObjects/IInteractableObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameObjects/UsableItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameObjects/UsableItem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net10.0/DiscordBattler.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net10.0/SingleSense-Engine.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net10.0/DiscordBattler.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net10.0/SingleSense-Engine.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/DiscordBattler.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/DiscordBattler.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/DiscordBattler.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/DiscordBattler.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/DiscordBattler.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/DiscordBattler.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/DiscordBattler.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/DiscordBattler.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/apphost" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/apphost" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/DiscordBattler.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/DiscordBattler.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1771243292351</updated>
-      <workItem from="1771243293867" duration="11268000" />
+      <workItem from="1771243293867" duration="11716000" />
     </task>
     <servers />
   </component>

@@ -27,10 +27,11 @@ public class Combatant(
     private readonly Random _dice = new();
     // Add weapon and armor types.
 
-    public bool Attack(Combatant target, int diceRoll)
+    // attackChanceRoll is the dice roll that will be compared to the dodge skill of the target. Needs to be either equal or higher to hit!
+    public bool Attack(Combatant target, int attackChanceRoll)
     {
         // Target hits
-        if (diceRoll >= target.Dodge)
+        if (attackChanceRoll >= target.Dodge)
         {
             float damageMultiplier = (_dice.Next(10) + 1) / 10f;
             target.TakeDamage((int)MathF.Round(Power * damageMultiplier));
